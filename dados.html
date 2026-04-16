@@ -29,12 +29,19 @@
 <section id="dados">
   <div class="container">
     <div class="section-header">
-      <div class="section-label">Dados oficiais · Rondônia · SEPOG / PC/RO</div>
+      <div class="section-label">Dados oficiais · Porto Velho e Rondônia</div>
       <h2>Violência doméstica em números</h2>
-      <p class="section-desc">Dados do Observatório de Segurança Pública do Estado de Rondônia (SEPOG) e da Polícia Civil, fornecidos por ofício. Atualização: 10/04/2026.</p>
+      <p class="section-desc">Dados organizados por fonte: Observatório SEPOG/RO, Polícia Civil de Rondônia (PC/RO · ofício) e DEAM Porto Velho (ofício). Atualização: 10/04/2026.</p>
     </div>
 
-    <div class="stats-grid">
+    <!-- ── FONTE 1: SEPOG/RO ── -->
+    <div style="margin-top:2rem;padding:.875rem 1.25rem;background:rgba(107,45,139,0.06);border-left:4px solid #6B2D8B;border-radius:0 8px 8px 0">
+      <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6B2D8B">Fonte 1</div>
+      <div style="font-size:1.05rem;font-weight:700;color:#1a1028;margin-top:.15rem">Observatório SEPOG/RO · Estado de Rondônia</div>
+      <div style="font-size:.82rem;color:#6B6580;margin-top:.1rem">observatorio.sepog.ro.gov.br · Lesão Corporal, Difamação e Calúnia (VD) · Atualização: 10/04/2026</div>
+    </div>
+
+    <div class="stats-grid" style="margin-top:1rem">
       <div class="stat-card">
         <div class="stat-year">Lesão Corporal (VD) · 2025</div>
         <span class="stat-number" data-target="4974">0</span>
@@ -48,33 +55,11 @@
         <div class="stat-name">Ocorrências registradas</div>
         <div class="stat-source">Observatório SEPOG/RO</div>
       </div>
-      <div class="stat-card rose-card">
-        <div class="stat-year">DEAM Porto Velho · 2025</div>
-        <span class="stat-number" data-target="3445">0</span>
-        <div class="stat-name">Ocorrências de violência doméstica</div>
-        <div class="stat-source">Polícia Civil de Rondônia · ofício</div>
-      </div>
-      <div class="stat-card rose-card">
-        <div class="stat-year">Medidas Protetivas · DEAM · 2025</div>
-        <span class="stat-number" data-target="2269">0</span>
-        <div class="stat-name">Medidas protetivas requeridas</div>
-        <div class="stat-source">Polícia Civil de Rondônia · ofício</div>
-      </div>
-    </div>
-
-    <div class="stats-grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
-      <div class="stat-card danger-card">
-        <div class="stat-year">Feminicídio · 2025</div>
-        <span class="stat-number" data-target="25">0</span>
-        <div class="stat-name">Casos registrados</div>
-        <div class="stat-source">PC/RO · ofício</div>
-        <span class="stat-change up">↑ +66,7% vs 2024</span>
-      </div>
-      <div class="stat-card danger-card">
-        <div class="stat-year">Feminicídio · 2024</div>
-        <span class="stat-number" data-target="15">0</span>
-        <div class="stat-name">Casos registrados</div>
-        <div class="stat-source">PC/RO · ofício</div>
+      <div class="stat-card">
+        <div class="stat-year">Lesão Corporal (VD) · 2026 parcial</div>
+        <span class="stat-number" data-target="538">0</span>
+        <div class="stat-name">Ocorrências jan–abr 2026</div>
+        <div class="stat-source">Ref. 08/04/2026 · SEPOG/RO</div>
       </div>
       <div class="stat-card">
         <div class="stat-year">Difamação (VD) · 2025</div>
@@ -90,11 +75,54 @@
         <div class="stat-source">Observatório SEPOG/RO</div>
         <span class="stat-change up">↑ +25,8% vs 2024</span>
       </div>
-      <div class="stat-card">
-        <div class="stat-year">Lesão Corporal (VD) · 2026 parcial</div>
-        <span class="stat-number" data-target="538">0</span>
-        <div class="stat-name">Ocorrências jan–abr 2026</div>
-        <div class="stat-source">Ref. 08/04/2026 · Observatório SEPOG/RO</div>
+    </div>
+
+    <div class="chart-card" style="margin-top:1.25rem">
+      <div class="chart-card-title">Série histórica — SEPOG/RO · Rondônia</div>
+      <div class="chart-card-sub">Fonte: Observatório SEPOG/RO. ¹ Dado 2026 parcial até 08/04/2026.</div>
+      <table class="data-table">
+        <thead><tr><th>Natureza</th><th style="text-align:right">2024</th><th style="text-align:right">2025</th><th style="text-align:right">Variação</th><th style="text-align:right">2026 ¹</th></tr></thead>
+        <tbody>
+          <tr><td>Lesão Corporal (Violência Doméstica)<span class="badge-pill">↑ principal</span></td><td class="num">4.591</td><td class="num">4.974</td><td class="num up">+8,3%</td><td class="num">538</td></tr>
+          <tr><td>Difamação (Violência Doméstica)</td><td class="num">204</td><td class="num">212</td><td class="num up">+3,9%</td><td class="num">24</td></tr>
+          <tr><td>Calúnia (Violência Doméstica)</td><td class="num">62</td><td class="num">78</td><td class="num up">+25,8%</td><td class="num">5</td></tr>
+        </tbody>
+      </table>
+      <p class="fonte">Naturezas disponíveis no Observatório SEPOG/RO: Lesão Corporal, Difamação e Calúnia (Violência Doméstica).</p>
+    </div>
+
+    <!-- ── FONTE 2: PC/RO · ofício ── -->
+    <div style="margin-top:2.5rem;padding:.875rem 1.25rem;background:rgba(185,28,28,0.05);border-left:4px solid #B91C1C;border-radius:0 8px 8px 0">
+      <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#B91C1C">Fonte 2</div>
+      <div style="font-size:1.05rem;font-weight:700;color:#1a1028;margin-top:.15rem">Polícia Civil de Rondônia · PC/RO · ofício</div>
+      <div style="font-size:.82rem;color:#6B6580;margin-top:.1rem">Dados fornecidos por ofício · Feminicídio (Rondônia), Medidas Protetivas e totais DEAM Porto Velho</div>
+    </div>
+
+    <div class="stats-grid" style="margin-top:1rem;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
+      <div class="stat-card danger-card">
+        <div class="stat-year">Feminicídio · Rondônia · 2025</div>
+        <span class="stat-number" data-target="25">0</span>
+        <div class="stat-name">Casos registrados</div>
+        <div class="stat-source">PC/RO · ofício</div>
+        <span class="stat-change up">↑ +66,7% vs 2024</span>
+      </div>
+      <div class="stat-card danger-card">
+        <div class="stat-year">Feminicídio · Rondônia · 2024</div>
+        <span class="stat-number" data-target="15">0</span>
+        <div class="stat-name">Casos registrados</div>
+        <div class="stat-source">PC/RO · ofício</div>
+      </div>
+      <div class="stat-card rose-card">
+        <div class="stat-year">DEAM Porto Velho · 2025</div>
+        <span class="stat-number" data-target="3445">0</span>
+        <div class="stat-name">Ocorrências de violência doméstica</div>
+        <div class="stat-source">PC/RO · ofício</div>
+      </div>
+      <div class="stat-card rose-card">
+        <div class="stat-year">Medidas Protetivas · DEAM · 2025</div>
+        <span class="stat-number" data-target="2269">0</span>
+        <div class="stat-name">Medidas protetivas requeridas</div>
+        <div class="stat-source">PC/RO · ofício</div>
       </div>
       <div class="stat-card">
         <div class="stat-year">Med. Protetivas revogadas · 2025</div>
@@ -105,20 +133,129 @@
       </div>
     </div>
 
-    <div class="chart-card" style="margin-top:1.5rem;">
-      <div class="chart-card-title">Série histórica — Crimes contra mulheres em Rondônia</div>
-      <div class="chart-card-sub">Fonte: Observatório SEPOG/RO + PC/RO (ofício). ¹ Dado 2026 parcial até 08/04/2026.</div>
+    <div class="chart-card" style="margin-top:1.25rem">
+      <div class="chart-card-title">Série histórica — PC/RO · Feminicídio e Medidas Protetivas · Rondônia</div>
+      <div class="chart-card-sub">Fonte: PC/RO · ofício.</div>
       <table class="data-table">
-        <thead><tr><th>Natureza</th><th style="text-align:right">2024</th><th style="text-align:right">2025</th><th style="text-align:right">Variação</th><th style="text-align:right">2026 ¹</th></tr></thead>
+        <thead><tr><th>Indicador</th><th style="text-align:right">2024</th><th style="text-align:right">2025</th><th style="text-align:right">Variação</th></tr></thead>
         <tbody>
-          <tr><td>Lesão Corporal (Violência Doméstica)<span class="badge-pill">↑ principal</span></td><td class="num">4.591</td><td class="num">4.974</td><td class="num up">+8,3%</td><td class="num">538</td></tr>
-          <tr><td>Difamação (Violência Doméstica)</td><td class="num">204</td><td class="num">212</td><td class="num up">+3,9%</td><td class="num">24</td></tr>
-          <tr><td>Calúnia (Violência Doméstica)</td><td class="num">62</td><td class="num">78</td><td class="num up">+25,8%</td><td class="num">5</td></tr>
-          <tr><td>Medidas Protetivas revogadas</td><td class="num">13</td><td class="num">12</td><td class="num dn">−7,7%</td><td class="num">10</td></tr>
-          <tr><td>Feminicídio<span class="badge-pill danger">GRAVE</span></td><td class="num">15</td><td class="num">25</td><td class="num up">+66,7%</td><td class="num">—</td></tr>
+          <tr><td>Feminicídio (Rondônia)<span class="badge-pill danger">GRAVE</span></td><td class="num">15</td><td class="num">25</td><td class="num up">+66,7%</td></tr>
+          <tr><td>Medidas Protetivas revogadas</td><td class="num">13</td><td class="num">12</td><td class="num dn">−7,7%</td></tr>
         </tbody>
       </table>
-      <p class="fonte">¹ Atualização em 10/04/2026, dado de referência em 08/04/2026. Naturezas rastreadas: Ameaça, Calúnia, Difamação, Injúria, Lesão Corporal (Violência Doméstica) — conforme Observatório SEPOG/RO.</p>
+    </div>
+
+    <!-- ── FONTE 3: DEAM Porto Velho + SEPOG/RO ── -->
+    <div style="margin-top:2.5rem;padding:.875rem 1.25rem;background:rgba(192,23,91,0.05);border-left:4px solid #C0175B;border-radius:0 8px 8px 0">
+      <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#C0175B">Fonte 3</div>
+      <div style="font-size:1.05rem;font-weight:700;color:#1a1028;margin-top:.15rem">DEAM Porto Velho · ofício + Observatório SEPOG/RO</div>
+      <div style="font-size:.82rem;color:#6B6580;margin-top:.1rem">Violência doméstica por natureza (DEAM · ofício) e feminicídio (SEPOG/RO) · Porto Velho · 01/01/2024 a 08/04/2026</div>
+    </div>
+
+    <div class="stats-grid" style="margin-top:1rem">
+      <div class="stat-card">
+        <div class="stat-year">Total Porto Velho · 2025</div>
+        <span class="stat-number" data-target="3815">0</span>
+        <div class="stat-name">Ocorrências registradas</div>
+        <div class="stat-source">DEAM Porto Velho · ofício</div>
+        <span class="stat-change up">↑ +2,8% vs 2024</span>
+      </div>
+      <div class="stat-card">
+        <div class="stat-year">Total Porto Velho · 2024</div>
+        <span class="stat-number" data-target="3710">0</span>
+        <div class="stat-name">Ocorrências registradas</div>
+        <div class="stat-source">DEAM Porto Velho · ofício</div>
+      </div>
+      <div class="stat-card rose-card">
+        <div class="stat-year">Ameaça (VD) · 2025</div>
+        <span class="stat-number" data-target="1881">0</span>
+        <div class="stat-name">Natureza mais registrada em Porto Velho</div>
+        <div class="stat-source">DEAM Porto Velho · ofício</div>
+        <span class="stat-change down">↓ −0,6% vs 2024</span>
+      </div>
+      <div class="stat-card rose-card">
+        <div class="stat-year">Porto Velho · 2026 parcial</div>
+        <span class="stat-number" data-target="1101">0</span>
+        <div class="stat-name">Ocorrências jan–abr 2026</div>
+        <div class="stat-source">Ref. 08/04/2026 · DEAM Porto Velho</div>
+      </div>
+    </div>
+
+    <div class="stats-grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-top:.75rem">
+      <div class="stat-card danger-card">
+        <div class="stat-year">Feminicídio · Porto Velho · 2025</div>
+        <span class="stat-number" data-target="7">0</span>
+        <div class="stat-name">Casos registrados</div>
+        <div class="stat-source">Observatório SEPOG/RO</div>
+        <span class="stat-change up">↑ +600% vs 2024</span>
+      </div>
+      <div class="stat-card danger-card">
+        <div class="stat-year">Feminicídio · Porto Velho · 2024</div>
+        <span class="stat-number" data-target="1">0</span>
+        <div class="stat-name">Casos registrados</div>
+        <div class="stat-source">Observatório SEPOG/RO</div>
+      </div>
+      <div class="stat-card danger-card">
+        <div class="stat-year">Feminicídio · Porto Velho · 2026 parcial</div>
+        <span class="stat-number" data-target="2">0</span>
+        <div class="stat-name">Casos jan–mar 2026</div>
+        <div class="stat-source">Ref. 30/03/2026 · SEPOG/RO</div>
+      </div>
+    </div>
+
+    <div class="chart-card" style="margin-top:1.25rem">
+      <div class="chart-card-title">Porto Velho — Ocorrências por natureza e período</div>
+      <div class="chart-card-sub">Fonte: DEAM Porto Velho · ofício + SEPOG/RO. ¹ VD até 08/04/2026. ² Feminicídio até 30/03/2026.</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Natureza</th>
+            <th style="text-align:right">2024</th>
+            <th style="text-align:right">2025</th>
+            <th style="text-align:right">Variação</th>
+            <th style="text-align:right">2026 ¹</th>
+            <th style="text-align:right">% 2025</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ameaça (Violência Doméstica)<span class="badge-pill">↑ principal</span></td>
+            <td class="num">1.893</td><td class="num">1.881</td>
+            <td class="num dn">−0,6%</td><td class="num">540</td><td class="num">49,3%</td>
+          </tr>
+          <tr>
+            <td>Lesão Corporal (Violência Doméstica)</td>
+            <td class="num">1.476</td><td class="num">1.542</td>
+            <td class="num up">+4,5%</td><td class="num">487</td><td class="num">40,4%</td>
+          </tr>
+          <tr>
+            <td>Injúria (Violência Doméstica)</td>
+            <td class="num">254</td><td class="num">298</td>
+            <td class="num up">+17,3%</td><td class="num">48</td><td class="num">7,8%</td>
+          </tr>
+          <tr>
+            <td>Difamação (Violência Doméstica)</td>
+            <td class="num">64</td><td class="num">57</td>
+            <td class="num dn">−10,9%</td><td class="num">17</td><td class="num">1,5%</td>
+          </tr>
+          <tr>
+            <td>Calúnia (Violência Doméstica)<span class="badge-pill danger">+60,9%</span></td>
+            <td class="num">23</td><td class="num">37</td>
+            <td class="num up">+60,9%</td><td class="num">9</td><td class="num">1,0%</td>
+          </tr>
+          <tr style="font-weight:600;background:rgba(107,45,139,0.06)">
+            <td>Total (VD)</td>
+            <td class="num">3.710</td><td class="num">3.815</td>
+            <td class="num up">+2,8%</td><td class="num">1.101</td><td class="num">—</td>
+          </tr>
+          <tr style="background:rgba(185,28,28,0.05)">
+            <td>Feminicídio<span class="badge-pill danger">GRAVE</span></td>
+            <td class="num">1</td><td class="num">7</td>
+            <td class="num up">+600%</td><td class="num">2 ²</td><td class="num">—</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="fonte">Violência doméstica: DEAM Porto Velho · ofício. Feminicídio: Observatório SEPOG/RO. ² Feminicídio 2026 parcial até 30/03/2026.</p>
     </div>
   </div>
 </section>
@@ -130,23 +267,48 @@
   <div class="container">
     <div class="section-header">
       <div class="section-label">Visualização de dados</div>
-      <h2>Análise comparativa 2024–2025</h2>
+      <h2>Análise comparativa 2024–2026</h2>
     </div>
     <div class="charts-grid">
+      <!-- SEPOG/RO -->
+      <div style="grid-column:1/-1;padding:.75rem 1.25rem;background:rgba(107,45,139,0.06);border-left:4px solid #6B2D8B;border-radius:0 8px 8px 0">
+        <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6B2D8B">Fonte 1 · Observatório SEPOG/RO</div>
+        <div style="font-size:.88rem;color:#6B6580;margin-top:.1rem">Rondônia (estado) · Lesão Corporal, Crimes psicológicos · Porto Velho · Feminicídio</div>
+      </div>
       <div class="chart-card full">
         <div class="chart-card-title">Lesão Corporal (Violência Doméstica) — Evolução 2024 · 2025 · 2026</div>
         <div class="chart-card-sub">Rondônia · Fonte: Observatório SEPOG/RO · 2026 parcial (jan–abr)</div>
         <div style="position:relative;height:230px;"><canvas id="c1" role="img" aria-label="Lesão corporal VD: 4591 em 2024, 4974 em 2025, 538 parcial 2026">2024: 4.591. 2025: 4.974. 2026 parcial: 538.</canvas></div>
       </div>
       <div class="chart-card">
-        <div class="chart-card-title">Feminicídio — 2024 vs 2025</div>
-        <div class="chart-card-sub">Rondônia · Fonte: PC/RO (ofício)</div>
-        <div style="position:relative;height:230px;"><canvas id="c2" role="img" aria-label="Feminicídios: 15 em 2024, 25 em 2025">2024: 15. 2025: 25.</canvas></div>
+        <div class="chart-card-title">Feminicídio — Porto Velho · 2024 · 2025 · 2026</div>
+        <div class="chart-card-sub">Porto Velho · Observatório SEPOG/RO · 2026 parcial (jan–mar)</div>
+        <div style="position:relative;height:230px;"><canvas id="c2" role="img" aria-label="Feminicídios Porto Velho: 1 em 2024, 7 em 2025, 2 parcial 2026">2024: 1. 2025: 7. 2026 parcial: 2.</canvas></div>
       </div>
       <div class="chart-card">
         <div class="chart-card-title">Crimes de natureza psicológica — 2024 vs 2025</div>
         <div class="chart-card-sub">Difamação e Calúnia (Violência Doméstica) · SEPOG/RO</div>
         <div style="position:relative;height:230px;"><canvas id="c3" role="img" aria-label="Difamação 204/212, Calúnia 62/78">Difamação 2024: 204, 2025: 212. Calúnia 2024: 62, 2025: 78.</canvas></div>
+      </div>
+      <!-- DEAM Porto Velho -->
+      <div style="grid-column:1/-1;padding:.75rem 1.25rem;background:rgba(192,23,91,0.05);border-left:4px solid #C0175B;border-radius:0 8px 8px 0;margin-top:.5rem">
+        <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#C0175B">Fonte 3 · DEAM Porto Velho · ofício</div>
+        <div style="font-size:.88rem;color:#6B6580;margin-top:.1rem">Porto Velho · Ocorrências por natureza, composição e evolução total</div>
+      </div>
+      <div class="chart-card full">
+        <div class="chart-card-title">Porto Velho — Ocorrências por natureza · 2024 · 2025 · 2026 parcial</div>
+        <div class="chart-card-sub">DEAM Porto Velho · ofício · 2026 parcial (jan–08/abr)</div>
+        <div style="position:relative;height:280px;"><canvas id="c4" role="img" aria-label="Ocorrências por natureza em Porto Velho: 2024, 2025 e 2026 parcial"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">Composição por natureza — Porto Velho 2025</div>
+        <div class="chart-card-sub">Participação de cada tipo no total de 3.815 ocorrências</div>
+        <div style="position:relative;height:280px;"><canvas id="c5" role="img" aria-label="Composição por natureza Porto Velho 2025"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">Evolução total — Porto Velho 2024–2026</div>
+        <div class="chart-card-sub">Total de ocorrências por período · DEAM Porto Velho · ofício</div>
+        <div style="position:relative;height:280px;"><canvas id="c6" role="img" aria-label="Total Porto Velho: 3710 em 2024, 3815 em 2025, 1101 parcial 2026">2024: 3.710. 2025: 3.815. 2026 parcial: 1.101.</canvas></div>
       </div>
     </div>
   </div>
