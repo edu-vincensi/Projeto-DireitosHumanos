@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parceiros · Violência contra Mulheres · Porto Velho</title>
+<title>Mapa de Apoio · Violência contra Mulheres · Porto Velho</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,25 +20,33 @@
     <li><a href="dados.html">Dados</a></li>
     <li><a href="dados.html#graficos">Gráficos</a></li>
     <li><a href="barreiras.html">Barreiras</a></li>
-    <li><a href="mapa.html">Mapa</a></li>
+    <li><a href="mapa.html" class="active">Mapa</a></li>
     <li><a href="sobre.html">Projeto</a></li>
-    <li><a href="parceiros.html" class="active">Parceiros</a></li>
+    <li><a href="parceiros.html">Parceiros</a></li>
     <li><a href="equipe.html" class="nav-cta">Equipe</a></li>
   </ul>
 </nav>
 
-<section id="parceiros">
+<section>
   <div class="container">
     <div class="section-header">
-      <div class="section-label">Rede institucional</div>
-      <h2>Instituições parceiras</h2>
-      <p class="section-desc">Órgãos e entidades que colaboram com o projeto, fornecendo dados, suporte técnico e espaço de atuação.</p>
+      <div class="section-label">Rede de Apoio · Porto Velho</div>
+      <h2>Onde buscar ajuda</h2>
+      <p class="section-desc">Clique em um local para ver o endereço e traçar a rota pelo Google Maps. Todas as coordenadas são aproximadas</p>
     </div>
-    <div class="partners-grid">
-      <div class="partner-card"><div class="partner-sigla">DEAM</div><div class="partner-name">Delegacia Especializada no Atendimento à Mulher · Porto Velho</div></div>
-      <div class="partner-card"><div class="partner-sigla">DPE</div><div class="partner-name">Defensoria Pública do Estado de Rondônia</div></div>
-      <div class="partner-card"><div class="partner-sigla">NUDEM</div><div class="partner-name">Núcleo de Promoção e Defesa dos Direitos da Mulher</div></div>
+
+    <div class="mapa-legenda">
+      <span class="mapa-legenda-item"><span class="mapa-legenda-dot" style="background:#B91C1C"></span>Polícia / Delegacia</span>
+      <span class="mapa-legenda-item"><span class="mapa-legenda-dot" style="background:#6B2D8B"></span>Jurídico / Ministério Público</span>
+      <span class="mapa-legenda-item"><span class="mapa-legenda-dot" style="background:#C0175B"></span>Assistência Social</span>
     </div>
+
+    <div class="mapa-layout">
+      <div class="mapa-lista" id="mapa-lista"></div>
+      <div id="mapa"></div>
+    </div>
+
+    <p class="fonte" style="margin-top:.75rem">Mapa: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="https://carto.com/">CARTO</a>. Coordenadas aproximadas — verifique o endereço exato antes de se deslocar.</p>
   </div>
 </section>
 
@@ -52,5 +61,7 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/mapa.js"></script>
 </body>
 </html>

@@ -1,15 +1,23 @@
-// Animação dos contadores
+const COUNTER_DURATION = 1600;
+const COUNTER_THRESHOLD = 0.4;
+
 const counters = document.querySelectorAll('[data-target]');
 if (counters.length) {
-  const io = new IntersectionObserver(es => es.forEach(e => {
-    if (!e.isIntersecting) return;
-    const el = e.target, t = +el.dataset.target, dur = 1600, s = performance.now();
-    (function f(n) {
-      const p = Math.min((n - s) / dur, 1), v = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(v * t).toLocaleString('pt-BR');
-      if (p < 1) requestAnimationFrame(f);
-    })(s);
-    io.unobserve(el);
-  }), { threshold: .4 });
-  counters.forEach(c => io.observe(c));
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = +el.dataset.target;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min((now - start) / COUNTER_DURATION, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target).toLocaleString('pt-BR');
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      observer.unobserve(el);
+    });
+  }, { threshold: COUNTER_THRESHOLD });
+  counters.forEach(counter => observer.observe(counter));
 }

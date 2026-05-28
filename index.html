@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Violência contra Mulheres · Porto Velho</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,6 +19,7 @@
     <li><a href="dados.html">Dados</a></li>
     <li><a href="dados.html#graficos">Gráficos</a></li>
     <li><a href="barreiras.html">Barreiras</a></li>
+    <li><a href="mapa.html">Mapa</a></li>
     <li><a href="sobre.html">Projeto</a></li>
     <li><a href="parceiros.html">Parceiros</a></li>
     <li><a href="equipe.html" class="nav-cta">Equipe</a></li>
@@ -27,17 +28,22 @@
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-tag"><span class="dot"></span>Projeto de Extensão Curricularizada · FCR · 2026.1</div>
-    <h1>Barreiras à <span>denúncia</span> de violência contra mulheres em Porto Velho</h1>
-    <p class="hero-desc">Identificando os obstáculos que silenciam vítimas e mapeando a rede de apoio para promover acesso à justiça na capital rondoniense.</p>
-    <div class="hero-badges">
-      <span class="hero-badge">Faculdade Católica de Rondônia · Direito</span>
-      <span class="hero-badge">Prof. Dra. Rita de Cássia Pessoa Nocetti</span>
-      <span class="hero-badge">Direitos Humanos</span>
+    <div>
+      <div class="hero-tag">Projeto de Extensão Curricularizada · FCR · 2026.1</div>
+      <h1>Barreiras à <span>denúncia</span> de violência contra mulheres em Porto Velho</h1>
+      <p class="hero-desc">Identificando os obstáculos que silenciam vítimas e mapeando a rede de apoio para promover acesso à justiça na capital rondoniense.</p>
+      <div class="hero-badges">
+        <span class="hero-badge">Faculdade Católica de Rondônia · Direito</span>
+        <span class="hero-badge">Prof. Dra. Rita de Cássia Pessoa Nocetti</span>
+        <span class="hero-badge">Direitos Humanos</span>
+      </div>
+      <div class="hero-actions">
+        <a href="dados.html" class="hero-btn primary">Ver dados e estatísticas</a>
+        <a href="sobre.html" class="hero-btn secondary">Sobre o projeto</a>
+      </div>
     </div>
-    <div class="hero-actions">
-      <a href="dados.html" class="hero-btn primary">Ver dados e estatísticas</a>
-      <a href="sobre.html" class="hero-btn secondary">Sobre o projeto</a>
+    <div class="hero-image">
+      <img src="img/hero.jpg" alt="Mulher com a mão espalmada em gesto de recusa">
     </div>
   </div>
 </div>
@@ -52,7 +58,6 @@
       <div class="sep"></div>
       <div class="emergency-num"><strong>197</strong><span>Disque-Denúncia · PC/RO</span></div>
       <div class="sep"></div>
-      <div class="emergency-num"><strong>181</strong><span>Disque-Segurança · RO</span></div>
     </div>
   </div>
 </div>
@@ -60,32 +65,32 @@
 <div class="quick-links">
   <div class="quick-links-grid">
     <a href="dados.html" class="quick-link-card">
-      <span class="quick-link-icon">📊</span>
+      <span class="quick-link-icon"><i data-lucide="bar-chart-2"></i></span>
       <div class="quick-link-title">Dados Oficiais</div>
       <div class="quick-link-sub">Estatísticas de Rondônia · SEPOG / PC/RO</div>
     </a>
     <a href="dados.html#graficos" class="quick-link-card">
-      <span class="quick-link-icon">📈</span>
+      <span class="quick-link-icon"><i data-lucide="trending-up"></i></span>
       <div class="quick-link-title">Gráficos</div>
       <div class="quick-link-sub">Análise comparativa 2024–2026</div>
     </a>
     <a href="barreiras.html" class="quick-link-card">
-      <span class="quick-link-icon">🚧</span>
+      <span class="quick-link-icon"><i data-lucide="alert-triangle"></i></span>
       <div class="quick-link-title">Barreiras</div>
       <div class="quick-link-sub">Por que o silêncio persiste?</div>
     </a>
     <a href="sobre.html" class="quick-link-card">
-      <span class="quick-link-icon">📋</span>
+      <span class="quick-link-icon"><i data-lucide="file-text"></i></span>
       <div class="quick-link-title">O Projeto</div>
       <div class="quick-link-sub">Objetivos e metodologia</div>
     </a>
     <a href="parceiros.html" class="quick-link-card">
-      <span class="quick-link-icon">🤝</span>
+      <span class="quick-link-icon"><i data-lucide="handshake"></i></span>
       <div class="quick-link-title">Parceiros</div>
       <div class="quick-link-sub">Rede institucional de apoio</div>
     </a>
     <a href="equipe.html" class="quick-link-card">
-      <span class="quick-link-icon">👥</span>
+      <span class="quick-link-icon"><i data-lucide="users"></i></span>
       <div class="quick-link-title">Equipe</div>
       <div class="quick-link-sub">Quem realiza o projeto</div>
     </a>
@@ -93,67 +98,66 @@
 </div>
 
 <!-- REDE DE APOIO -->
-<div style="background:var(--light);padding:4rem 2.5rem;border-top:1.5px solid var(--border)">
-  <div style="max-width:1100px;margin:0 auto">
-    <div class="section-header" style="margin-bottom:2rem">
+<div class="rede-apoio">
+  <div class="rede-apoio-inner">
+    <div class="section-header">
       <div class="section-label">Sala Humanizada · Rede Lilás PVH</div>
       <h2>Rede de apoio em Porto Velho</h2>
       <p class="section-desc">Contatos de emergência, atendimento especializado e canais de denúncia disponíveis para mulheres em situação de violência.</p>
     </div>
 
     <!-- Emergência -->
-    <div style="margin-bottom:1.25rem">
-      <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--danger);margin-bottom:.75rem">Emergência</div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem">
-        <div style="background:#FFF8F8;border:1.5px solid #FCA5A5;border-radius:10px;padding:1rem 1.25rem;display:flex;align-items:center;gap:.75rem">
-          <span style="font-size:1.6rem;font-weight:800;color:var(--danger);min-width:3rem">190</span>
-          <span style="font-size:13px;color:var(--dark);font-weight:600">Polícia Militar</span>
+    <div class="rede-apoio-group">
+      <div class="rede-apoio-group-label rede-apoio-group-label--danger">Emergência</div>
+      <div class="emergency-cards">
+        <div class="emergency-card">
+          <span class="emergency-card-number">190</span>
+          <span class="emergency-card-name">Polícia Militar</span>
         </div>
-        <div style="background:#FFF8F8;border:1.5px solid #FCA5A5;border-radius:10px;padding:1rem 1.25rem;display:flex;align-items:center;gap:.75rem">
-          <span style="font-size:1.6rem;font-weight:800;color:var(--danger);min-width:3rem">197</span>
-          <span style="font-size:13px;color:var(--dark);font-weight:600">Polícia Civil</span>
+        <div class="emergency-card">
+          <span class="emergency-card-number">197</span>
+          <span class="emergency-card-name">Polícia Civil</span>
         </div>
-        <div style="background:#FFF8F8;border:1.5px solid #FCA5A5;border-radius:10px;padding:1rem 1.25rem;display:flex;align-items:center;gap:.75rem">
-          <span style="font-size:1.6rem;font-weight:800;color:var(--danger);min-width:3rem">180</span>
-          <span style="font-size:13px;color:var(--dark);font-weight:600">Central Nacional de Atendimento à Mulher · 24h</span>
+        <div class="emergency-card">
+          <span class="emergency-card-number">180</span>
+          <span class="emergency-card-name">Central Nacional de Atendimento à Mulher · 24h</span>
         </div>
       </div>
     </div>
 
     <!-- Atendimento especializado -->
-    <div style="margin-bottom:1.25rem">
-      <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--purple);margin-bottom:.75rem">Atendimento especializado · Porto Velho</div>
-      <div style="background:var(--white);border:1.5px solid var(--border);border-radius:10px;overflow:hidden">
-        <table style="width:100%;border-collapse:collapse;font-size:13px">
+    <div class="rede-apoio-group">
+      <div class="rede-apoio-group-label rede-apoio-group-label--purple">Atendimento especializado · Porto Velho</div>
+      <div class="contact-table-wrapper">
+        <table class="contact-table">
           <tbody>
-            <tr style="border-bottom:1px solid var(--border)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600;width:45%">WhatsApp · Polícia Civil</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 98439-0102</td></tr>
-            <tr style="border-bottom:1px solid var(--border);background:var(--light)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">WhatsApp · Central Nacional</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">+55 61 9610-0180</td></tr>
-            <tr style="border-bottom:1px solid var(--border)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">WhatsApp · Ouvidoria MPE-RO</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 999 770 180</td></tr>
-            <tr style="border-bottom:1px solid var(--border);background:var(--light)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">WhatsApp · CREAS Mulher PVH</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 8473-4725</td></tr>
-            <tr style="border-bottom:1px solid var(--border)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Central MPU</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 98485-9602</td></tr>
-            <tr style="border-bottom:1px solid var(--border);background:var(--light)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Plantão Social · CREAS</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 98473-5966</td></tr>
-            <tr style="border-bottom:1px solid var(--border)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Plantão Criminal · MP</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 99970-7656</td></tr>
-            <tr style="border-bottom:1px solid var(--border);background:var(--light)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Juizado de Violência Doméstica</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 3309-7107</td></tr>
-            <tr style="border-bottom:1px solid var(--border)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Promotoria Feminicídio</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 99945-8442</td></tr>
-            <tr style="border-bottom:1px solid var(--border);background:var(--light)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Promotoria Violência Doméstica</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 99964-7292</td></tr>
-            <tr style="border-bottom:1px solid var(--border)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Sala Lilás · MP</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 98408-9931</td></tr>
-            <tr style="border-bottom:1px solid var(--border);background:var(--light)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Central · Programa Mulher Protegida</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 99953-1206</td></tr>
-            <tr style="border-bottom:1px solid var(--border)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Patrulha Maria da Penha</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--dark)">(69) 9921-3580</td></tr>
-            <tr style="background:var(--light)"><td style="padding:.7rem 1rem;color:var(--gray2);font-weight:600">Rede Lilás PVH · e-mail</td><td style="padding:.7rem 1rem;font-weight:700;color:var(--purple)">redelillaspvh@gmail.com</td></tr>
+            <tr><td>WhatsApp · Polícia Civil</td><td>(69) 98439-0102</td></tr>
+            <tr><td>WhatsApp · Central Nacional</td><td>+55 61 9610-0180</td></tr>
+            <tr><td>WhatsApp · Ouvidoria MPE-RO</td><td>(69) 999 770 180</td></tr>
+            <tr><td>WhatsApp · CREAS Mulher PVH</td><td>(69) 8473-4725</td></tr>
+            <tr><td>Central MPU</td><td>(69) 98485-9602</td></tr>
+            <tr><td>Plantão Social · CREAS</td><td>(69) 98473-5966</td></tr>
+            <tr><td>Plantão Criminal · MP</td><td>(69) 99970-7656</td></tr>
+            <tr><td>Juizado de Violência Doméstica</td><td>(69) 3309-7107</td></tr>
+            <tr><td>Promotoria Feminicídio</td><td>(69) 99945-8442</td></tr>
+            <tr><td>Promotoria Violência Doméstica</td><td>(69) 99964-7292</td></tr>
+            <tr><td>Sala Lilás · MP</td><td>(69) 98408-9931</td></tr>
+            <tr><td>Central · Programa Mulher Protegida</td><td>(69) 99953-1206</td></tr>
+            <tr><td>Patrulha Maria da Penha</td><td>(69) 9921-3580</td></tr>
+            <tr><td>Rede Lilás PVH · e-mail</td><td class="email">redelillaspvh@gmail.com</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
     <!-- Medidas protetivas online -->
-    <div style="background:var(--purple3);border:1.5px solid var(--border2);border-radius:10px;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+    <div class="medidas-banner">
       <div>
-        <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--purple);margin-bottom:.2rem">Medidas Protetivas Online · TJRO</div>
-        <div style="font-size:13px;color:var(--dark);font-weight:600">Solicite medidas protetivas de urgência pelo site do Tribunal de Justiça de Rondônia</div>
+        <div class="medidas-banner-label">Medidas Protetivas Online · TJRO</div>
+        <div class="medidas-banner-text">Solicite medidas protetivas de urgência pelo site do Tribunal de Justiça de Rondônia</div>
       </div>
-      <a href="https://medidasprotetivasonline.tjro.jus.br/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:.65rem 1.25rem;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;background:var(--purple);color:white;white-space:nowrap">Acessar site →</a>
+      <a href="https://medidasprotetivasonline.tjro.jus.br/" target="_blank" rel="noopener" class="medidas-banner-link">Acessar site →</a>
     </div>
-
   </div>
 </div>
 
@@ -168,5 +172,7 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

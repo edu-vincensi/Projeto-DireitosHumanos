@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Barreiras à Denúncia · Violência contra Mulheres · Porto Velho</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,6 +19,7 @@
     <li><a href="dados.html">Dados</a></li>
     <li><a href="dados.html#graficos">Gráficos</a></li>
     <li><a href="barreiras.html" class="active">Barreiras</a></li>
+    <li><a href="mapa.html">Mapa</a></li>
     <li><a href="sobre.html">Projeto</a></li>
     <li><a href="parceiros.html">Parceiros</a></li>
     <li><a href="equipe.html" class="nav-cta">Equipe</a></li>
@@ -34,43 +35,43 @@
     </div>
     <div class="barriers-grid">
       <div class="barrier-card">
-        <div class="barrier-icon">😰</div>
+        <div class="barrier-icon"><i data-lucide="shield-alert"></i></div>
         <div class="barrier-title">Medo do agressor</div>
         <div class="barrier-desc">O principal fator de silêncio, segundo o Del. Leonardo Margela. Muitas mulheres temem novas agressões ou até a morte — e algumas chegam a desmentir o próprio boletim de ocorrência já registrado, especialmente quando o agressor ocupa cargo de autoridade.</div>
       </div>
       <div class="barrier-card">
-        <div class="barrier-icon">💰</div>
+        <div class="barrier-icon"><i data-lucide="banknote"></i></div>
         <div class="barrier-title">Dependência econômica</div>
         <div class="barrier-desc">A maioria das vítimas atendidas na DEAM tem vínculo com trabalho informal ou depende financeiramente do companheiro. Em muitos casos, é o próprio agressor quem proíbe que ela trabalhe ou estude — o que configura também violência patrimonial, conforme o NUDEM.</div>
       </div>
       <div class="barrier-card">
-        <div class="barrier-icon">💔</div>
+        <div class="barrier-icon"><i data-lucide="heart-crack"></i></div>
         <div class="barrier-title">Pressão familiar e emocional</div>
         <div class="barrier-desc">Mulheres relatam sentimento de culpa ao considerar a denúncia, pressionadas pela própria família e pela família do agressor. Quando há filhos em comum, a decisão de romper fica ainda mais difícil — e a retomada do relacionamento é o motivo mais frequente de desistência, segundo o NUDEM.</div>
       </div>
       <div class="barrier-card">
-        <div class="barrier-icon">🙏</div>
+        <div class="barrier-icon"><i data-lucide="globe"></i></div>
         <div class="barrier-title">Fatores culturais e religiosos</div>
         <div class="barrier-desc">A naturalização da violência doméstica, a vergonha e crenças sobre o papel da mulher no casamento contribuem para a permanência na relação abusiva. O NUDEM aponta que esse fator dificulta inclusive a busca por informação sobre direitos e medidas protetivas.</div>
       </div>
       <div class="barrier-card">
-        <div class="barrier-icon">📍</div>
+        <div class="barrier-icon"><i data-lucide="map-pin"></i></div>
         <div class="barrier-title">Concentração na zona leste</div>
         <div class="barrier-desc">A maioria dos registros da DEAM vem de classes C, D e E, especialmente da zona leste de Porto Velho, onde há maior concentração populacional. Mulheres de áreas mais afastadas enfrentam dificuldade adicional para acessar os serviços de proteção.</div>
       </div>
       <div class="barrier-card">
-        <div class="barrier-icon">⚖️</div>
+        <div class="barrier-icon"><i data-lucide="scale"></i></div>
         <div class="barrier-title">Insegurança institucional</div>
         <div class="barrier-desc">Sem a participação da vítima no inquérito, o processo pode ficar fragilizado — alerta o Del. Margela. O NUDEM reforça: muitas mulheres desconhecem que podem solicitar medidas protetivas em menos de 48h, tanto presencialmente quanto por aplicativos públicos.</div>
       </div>
       <div class="barrier-card">
-        <div class="barrier-icon">🍺</div>
+        <div class="barrier-icon"><i data-lucide="wine"></i></div>
         <div class="barrier-title">Álcool e reincidência</div>
         <div class="barrier-desc">Cerca de 80% dos casos atendidos na DEAM envolvem consumo de álcool como potencializador das agressões. A reincidência é comum: agressores primários costumam ser liberados rapidamente após audiência de custódia, o que alimenta a sensação de impunidade.</div>
       </div>
     </div>
 
-    <div class="chart-card" style="margin-top:2rem">
+    <div class="chart-card">
       <div class="chart-card-title">Fontes das entrevistas</div>
       <div class="chart-card-sub">Pesquisa de campo realizada em abril de 2026 · Projeto de Extensão FCR</div>
       <table class="data-table">
@@ -96,5 +97,7 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
