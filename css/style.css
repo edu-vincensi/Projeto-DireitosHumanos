@@ -50,6 +50,8 @@ nav { position:sticky; top:0; z-index:100; background:var(--white); border-botto
 
 .quick-links { background:var(--light); padding:3.5rem 2.5rem; }
 .quick-links-grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:1rem; }
+.quick-links-grid-center { max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
+.quick-links-grid-center .quick-link-card { width:200px; flex-shrink:0; }
 .quick-link-card { background:var(--white); border:1px solid var(--border); border-radius:8px; padding:1.5rem 1.25rem; text-align:center; text-decoration:none; color:var(--dark); transition:border-color .15s; }
 .quick-link-card:hover { border-color:var(--purple); }
 .quick-link-icon { display:flex; justify-content:center; align-items:center; height:36px; margin-bottom:.75rem; }
