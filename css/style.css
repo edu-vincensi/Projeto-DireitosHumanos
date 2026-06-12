@@ -178,6 +178,23 @@ footer { background:var(--dark); color:rgba(255,255,255,.7); padding:3rem 2.5rem
 .popup-btn { display:inline-block; padding:.35rem .85rem; background:#6B2D8B; color:white; border-radius:5px; font-size:11px; font-weight:600; text-decoration:none; }
 .popup-btn:hover { opacity:.85; }
 
+/* Legenda de zonas */
+.mapa-legenda-sep { width:1px; height:14px; background:var(--border); margin:0 .25rem; }
+.mapa-legenda-zona { width:14px; height:14px; border-radius:50%; flex-shrink:0; opacity:.6; }
+
+/* Ranking de bairros */
+.ranking-section { margin-top:2rem; }
+.ranking-header { margin-bottom:.75rem; }
+.ranking-title { font-size:14px; font-weight:700; color:var(--dark); }
+.ranking-fonte { font-size:11px; color:var(--gray); margin-top:.15rem; }
+.ranking-table th { background:var(--light); font-size:11px; font-weight:600; color:var(--gray); text-transform:uppercase; letter-spacing:.04em; padding:.5rem .75rem; }
+.nivel { display:inline-block; padding:.2rem .55rem; border-radius:4px; font-size:11px; font-weight:600; }
+.nivel--muito-alto { background:#FEE2E2; color:#991B1B; }
+.nivel--alto { background:#FEE2E2; color:#DC2626; }
+.nivel--medio { background:#FFEDD5; color:#C2410C; }
+.nivel--baixo { background:#F0FDF4; color:#166534; }
+.ranking-scroll { max-height:420px; overflow-y:auto; }
+
 /* Source banners */
 .source-banner { padding:.875rem 1.25rem; border-left:4px solid; border-radius:0 8px 8px 0; margin-top:2.5rem; }
 .source-banner--sm { padding:.75rem 1.25rem; margin-top:0; }
